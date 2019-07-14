@@ -9,9 +9,9 @@ const apiKey = 'test_268aa7aa584bbc7191a5bbd10a8d8fb9bea6ac5592f1e9456692eda73f0
 router.get('/', async (ctx, next) => {
  const email = ctx.request.email;
  const url = `https://api.kickbox.com/v2/verify?email=${email}&apikey=${apiKey}`;
- return fetch(url).then(res => {
-  console.log(res.body);
-  ctx.body = res.body;
+ return fetch(url).then(res => res.json()).then(json => {
+  console.log(json);
+  ctx.body = json;
  });
 });
 app.use(router.routes());
