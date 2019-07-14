@@ -5,9 +5,9 @@ const router = new Router();
 const PORT = process.env.PORT || 5000
 const kickbox = require('kickbox').client('test_268aa7aa584bbc7191a5bbd10a8d8fb9bea6ac5592f1e9456692eda73f082ccf').kickbox();
 
-router.get('/', (ctx, next) => {
+router.get('/', async (ctx, next) => {
  const email = ctx.request.email;
- kickbox.verify(email, (err, res) => {
+ return kickbox.verify(email, (err, res) => {
   console.log(res.body);
   ctx.body = res.body;
  });
