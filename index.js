@@ -7,4 +7,4 @@ router.get('/', (ctx, next) => {
 });
 app.use(router.routes());
 app.use(router.allowedMethods());
-app.listen(80);
+app.listen(443);
