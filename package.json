@@ -1,0 +1,27 @@
+{
+  "name": "kickbox-nodejs",
+  "version": "1.0.0",
+  "description": "A sample Node.js app to forward kickbox requests",
+  "engines": {
+    "node": "10.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/collapsarzhang/kickbox-nodejs"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "koajs"
+  ],
+  "license": "MIT"
+}
