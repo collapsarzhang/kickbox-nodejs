@@ -12,7 +12,8 @@
   "dependencies": {
     "koa": "^2.7.0",
     "koa-router": "^7.4.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "koa-cors": "^0.0.16"
   },
   "devDependencies": {},
   "repository": {
